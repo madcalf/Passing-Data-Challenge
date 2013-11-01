@@ -21,6 +21,7 @@
 		6FB7A5EB1823EB1C003EF516 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FB7A5CD1823EB1C003EF516 /* UIKit.framework */; };
 		6FB7A5F31823EB1D003EF516 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6FB7A5F11823EB1D003EF516 /* InfoPlist.strings */; };
 		6FB7A5F51823EB1D003EF516 /* Passing_Data_ChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB7A5F41823EB1D003EF516 /* Passing_Data_ChallengeTests.m */; };
+		6FB7A6001823F643003EF516 /* DDDDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB7A5FF1823F643003EF516 /* DDDDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		6FB7A5F01823EB1D003EF516 /* Passing Data ChallengeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Passing Data ChallengeTests-Info.plist"; sourceTree = "<group>"; };
 		6FB7A5F21823EB1D003EF516 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6FB7A5F41823EB1D003EF516 /* Passing_Data_ChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Passing_Data_ChallengeTests.m; sourceTree = "<group>"; };
+		6FB7A5FE1823F643003EF516 /* DDDDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDDetailViewController.h; sourceTree = "<group>"; };
+		6FB7A5FF1823F643003EF516 /* DDDDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				6FB7A5DB1823EB1C003EF516 /* Main.storyboard */,
 				6FB7A5DE1823EB1C003EF516 /* DDDViewController.h */,
 				6FB7A5DF1823EB1C003EF516 /* DDDViewController.m */,
+				6FB7A5FE1823F643003EF516 /* DDDDetailViewController.h */,
+				6FB7A5FF1823F643003EF516 /* DDDDetailViewController.m */,
 				6FB7A5E11823EB1C003EF516 /* Images.xcassets */,
 				6FB7A5D01823EB1C003EF516 /* Supporting Files */,
 			);
@@ -252,6 +257,7 @@
 			files = (
 				6FB7A5D61823EB1C003EF516 /* main.m in Sources */,
 				6FB7A5E01823EB1C003EF516 /* DDDViewController.m in Sources */,
+				6FB7A6001823F643003EF516 /* DDDDetailViewController.m in Sources */,
 				6FB7A5DA1823EB1C003EF516 /* DDDAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
