@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DDDDetailViewController.h"
 
-@interface DDDViewController : UIViewController
+@interface DDDViewController : UIViewController <DDDDetailViewControllerDelegate, UITextFieldDelegate>
 @property (strong, nonatomic) IBOutlet UITextField *textField;
 
 @end

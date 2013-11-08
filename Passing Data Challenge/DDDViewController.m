@@ -19,6 +19,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.textField.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,12 +36,29 @@
         // check that the destination is our detail view
         if ([segue.destinationViewController isKindOfClass:[DDDDetailViewController class]]) {
             
-            // create a pointer of type DDDDetailViewController so we can talk to it.
+            // Since segue.destinationController is of type id, it won't recognize the dataToDisplay property. So we need to create a pointer of type DDDDetailViewController so we can access it's properties, etc.
             DDDDetailViewController *detailViewController = segue.destinationViewController;
             detailViewController.dataToDisplay = self.textField.text;
             
+            // assign this class as the delegate to the DetailView
+            detailViewController.delegate = self;
         }
     }
 }
 
+#pragma mark - DDDDetailViewControllerDelegate
+
+-(void)didUpdateText:(NSString *)aString {
+    self.textField.text = aString;
+    // Ah, here's how we pop the detail view off the stack.
+    //    [self.navigationController popViewControllerAnimated:YES];
+}
+
+#pragma mark - UITextFieldDelegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    NSLog(@"[DDDViewController textFieldShouldReturn");
+    [self.textField resignFirstResponder];
+    return YES;
+}
 @end
